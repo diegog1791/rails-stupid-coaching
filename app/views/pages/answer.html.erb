@@ -1,0 +1,22 @@
+<div style="text-align:center">
+<h1>Stupid Coaching</h1>
+</div>
+
+<br>
+
+<div  id="you" style="text-align:left; width: 600px; border: 1px solid grey " class="mx-auto p-3 mb-4 rounded-end shadow p-3 mb-5 bg-white rounded">
+<p><%=params[:question]%></p>
+<p style="border=4px text-align:left" >- You</p>
+</div>
+
+<br>
+
+<div id="yourcoach" style="text-align:left; width: 600px; border: 1px solid grey " class="mx-auto p-3 rounded-end shadow p-3 mb-5 bg-white rounded" >
+<p><%= @answer %></p>
+<p style="border:4px; text-align:left background-color: #FFFFFF" >- Your coach</p>
+</div>
+
+<div style="text-align:center">
+<%= link_to "Back to questions", ask_path %>
+</div>
+
